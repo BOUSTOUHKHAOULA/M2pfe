@@ -1,0 +1,545 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff2') format('woff2'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/*---------------------------------- End of fonts ---------------------------------- */
+
+body {
+    font-family: 'Tajawal', sans-serif;}
+
+.ltr {
+    direction:ltr;
+}
+
+.dmtop{
+    background-color: #3C3D41;
+    width: 100px;
+    height: 10px;
+    line-height: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    left: -1040px;
+    bottom: 10px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 28px;
+    color: #ffffff !important;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+.dropdown-footer, .dropdown-header {
+    text-align: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-left: .5rem;
+}
+
+
+/*------------------------------------ contacts-list ------------------------------------*/
+
+.contacts-list-img {
+    float: right;
+}
+
+.contacts-list-info {
+    margin-right: 45px;
+    margin-left: 0;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    direction: ltr;
+}
+
+.sidebar > div:first-child {
+    direction: rtl;
+}
+
+.control-sidebar, .control-sidebar:before {
+    left: -250px;
+    right: auto;
+    transition: left .3s ease-in-out;
+}
+
+.control-sidebar-slide-open .control-sidebar, .control-sidebar-slide-open .control-sidebar:before {
+    left: 0;
+    right: auto;
+}
+
+.small-box .icon {
+    right:auto;
+    left:10px;
+}
+
+.nav-sidebar .nav-link>p>.right {
+    left: 1rem;
+    right: auto;
+}
+
+.nav-sidebar>.nav-item .nav-icon {
+    margin-right: 0;
+    margin-left: .2rem;
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 0rem !important;
+        margin-right: 4.6rem !important;
+        z-index:100;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar:before {
+        margin-right: 0;
+        width: 4.6rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .content-wrapper, .main-footer, .main-header {
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+        margin-left : 0;
+        z-index: 3000;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-sidebar, .main-sidebar:before {
+        box-shadow: none!important;
+        margin-right: -250px;
+        margin-left: 0;
+    }
+
+    .content-wrapper, .content-wrapper:before, .main-footer, .main-footer:before, .main-header, .main-header:before {
+        margin-right: 0;
+    }
+
+    .sidebar-open .main-sidebar, .sidebar-open .main-sidebar:before {
+        margin-right: 0;
+        z-index: 4000;
+    }
+}
+
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar:before {
+    margin-right: -250px;
+}
+
+.main-sidebar {
+    left: auto;
+    right:0;
+}
+
+/* Cards */
+
+.card-header>.card-tools {
+    right:auto;
+    left:1rem;
+}
+
+.user-block img {
+    float: right;
+}
+
+.attachment-block .attachment-img {
+    float: right;
+}
+
+.attachment-block .attachment-pushed {
+    margin-left: 0px;
+    margin-right: 110px;
+}
+
+.card-comments .card-comment img, .img-lg, .img-md, .img-sm, .user-block.user-block-sm img {
+    float: right;
+}
+
+.card-comments .comment-text {
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+.card-comments .card-comment img+.img-push, .img-sm+.img-push, .user-block.user-block-sm img+.img-push {
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.user-block .comment, .user-block .description, .user-block .username {
+    margin-right: 50px;
+    margin-left: 0px;
+}
+
+.btn-group-vertical {
+    align-items: center;
+}
+
+
+/*------------------------- Form ----------------------------*/
+.select2-container .select2-search--inline {
+    float: right;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    text-align: right;
+}
+
+/*----------------------- Extra Page ---------------------------*/
+.error-page>.headline {
+    float: right;
+}
+
+.error-page>.error-content {
+    margin-right: 190px;
+    margin-left: 0;
+}
+
+.lockscreen-image {
+    left: auto;
+    right:-10px;
+}
+
+.lockscreen-credentials {
+    margin-left: 0px;
+    margin-right: 70px;
+}
+
+.nav {
+    padding-inline-start: 0px !important;
+}
+
+/*---------------------------------- Persian Date Picker ---------------------------------- */
+
+.datepicker-plot-area {
+    font-family: 'Vazir', sans-serif;
+}
+/*---------------------------------- custom radio button ------------------------------------*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(204, 204, 204, 0.582);
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: rgba(145, 145, 145, 0.582);
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.remarquearea{
+    resize: none;
+    overflow: auto;
+    background-color: rgba(74, 172, 252, 0.082);
+    border:solid 1px rgba(89, 133, 168, 0.685);
+    padding: 10px;
+    width: 490px;
+}
+.remarqueareatrai{
+    resize: none;
+    overflow: auto;
+    background-color: rgba(74, 172, 252, 0.082);
+    border:solid 1px rgba(89, 133, 168, 0.685);
+    padding: 10px;
+    width: 505px;
+}
+.remarqueareatrai:focus{
+    outline: none !important;
+    box-shadow: 0 0 3px #719ECE;
+}
+.remarquearea:focus{
+    outline: none !important;
+    box-shadow: 0 0 3px #719ECE;
+}
+.result{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 140px;
+    width:160px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: rgb(70, 70, 70);
+    padding: 10px;
+    font-size:18px;
+    font-family: 'Tajawal', sans-serif;
+}
+.result:focus{
+    outline:0;
+}
+#takephoto{
+    font-family: 'Tajawal', sans-serif;
+    outline: 0;
+}
+#fatherpic{
+    font-family: 'Tajawal', sans-serif;
+    outline: 0;
+}
+#motherpic{
+    font-family: 'Tajawal', sans-serif;
+    outline: 0;
+}
+#traitant{
+    font-family: 'Tajawal', sans-serif;
+    outline: 0;
+}
+#traitantpic{
+    font-family: 'Tajawal', sans-serif;
+    outline: 0;
+}
+#degree{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: px;
+    width:160px;
+    cursor: pointer;
+    background-color:rgb(70, 70, 70);
+    color: white;
+    border: rgb(70, 70, 70);
+    padding: 10px;
+    font-size:18px;
+    font-family: 'Tajawal', sans-serif;
+}
+#degree:focus{
+    outline:0;
+}
+#degree:hover{
+    background-color:#2196F3;
+}
+
+#points{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 40px;
+    width:160px;
+    border: #2196F3;
+    padding: 10px;
+    font-size:18px;
+    background-color: white;
+
+}
+
+.saveresult{
+    margin: 180px;
+    margin-top: 20px;
+    width:160px;
+    cursor: pointer;
+    font-family: 'Tajawal', sans-serif;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: rgb(168, 169, 170);
+    padding: 10px;
+    font-size:18px;
+}
+.saveresult:focus{
+    outline:0;
+}
+.saveresult:hover{
+    background-color: #2196F3;
+}
+
+#img{
+    display:block;
+    margin:auto;}
+#takephoto{
+    display:block;
+    margin:auto;
+    margin-top: -20px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: #2196F3;
+    border-radius: 4px;
+    padding: 8px;
+}
+#takephoto:hover{
+    background-color: rgb(70, 70, 70);
+}
+#mother{
+    margin-right:260px;
+    margin-top: -211px;
+}
+#motherpic{
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: #2196F3;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 273px;
+    margin-top: -64px;
+    position: absolute;
+}
+#motherpic:hover{
+    background-color: rgb(70, 70, 70);
+}
+#father{
+    margin-right:140px;
+
+}
+#fatherpic{
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: #2196F3;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 149px;
+    margin-top: 5px;
+}
+
+#fatherpic:hover{
+    background-color: rgb(70, 70, 70);
+}
+#traitant{
+    display:block;
+    margin:auto;
+    margin-top: -10px;
+}
+#traitantpic{
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: #2196F3;
+    border-radius: 4px;
+    padding: 8px;
+    display:block;
+    margin:auto;
+    margin-top: -20px;
+}
+#traitantpic:hover{
+    background-color: rgb(70, 70, 70);
+}
+.exit{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 20px;
+
+}
